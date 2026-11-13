@@ -1,6 +1,8 @@
 Na hřebenech – semestrální projekt KIP/7REWB
 ============================================
 
+Online: https://bigjohnn1.github.io/na-hrebenech/ (adresa je i v url.txt)
+
 Spuštění: otevřít index.html v prohlížeči (Bootstrap, ikony, DataTables a písma
 se načítají z CDN, je potřeba připojení k internetu).
 
