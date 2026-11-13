@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="2119" viewBox="0 0 1280 2119" font-family="Inter, Segoe UI, Arial, sans-serif">
+<title>Galerie – galerie.html</title>
+<rect x="0" y="0" width="1280" height="2119" fill="#fff"/>
+<rect x="0" y="1923" width="1280" height="196" fill="#e9e9e9" stroke="none"/>
+<rect x="0" y="64" width="1280" height="184" fill="#f5f5f5" stroke="none"/>
+<rect x="0" y="0" width="1280" height="64" rx="0" fill="#fff" stroke="#777" stroke-width="1"/>
+<path d="M70 44.0 79 28.0l5 8 5-10 11 18Z" fill="none" stroke="#222" stroke-width="2"/>
+<text x="112" y="40" font-size="20" font-weight="700" fill="#222" text-anchor="start">Na hřebenech</text>
+<rect x="1085" y="25" width="13" height="13" rx="3" fill="none" stroke="#777" stroke-width="1"/>
+<text x="1104" y="37" font-size="14" font-weight="400" fill="#444" text-anchor="start">Společné akce</text>
+<line x1="982" y1="62" x2="1057" y2="62" stroke="#222" stroke-width="3"/>
+<rect x="982" y="25" width="13" height="13" rx="3" fill="none" stroke="#777" stroke-width="1"/>
+<text x="1001" y="37" font-size="14" font-weight="600" fill="#222" text-anchor="start">Galerie</text>
+<rect x="886" y="25" width="13" height="13" rx="3" fill="none" stroke="#777" stroke-width="1"/>
+<text x="905" y="37" font-size="14" font-weight="400" fill="#444" text-anchor="start">Výbava</text>
+<rect x="791" y="25" width="13" height="13" rx="3" fill="none" stroke="#777" stroke-width="1"/>
+<text x="810" y="37" font-size="14" font-weight="400" fill="#444" text-anchor="start">Pohoří</text>
+<rect x="672" y="25" width="13" height="13" rx="3" fill="none" stroke="#777" stroke-width="1"/>
+<text x="691" y="37" font-size="14" font-weight="400" fill="#444" text-anchor="start">Deník túr</text>
+<rect x="592" y="25" width="13" height="13" rx="3" fill="none" stroke="#777" stroke-width="1"/>
+<text x="611" y="37" font-size="14" font-weight="400" fill="#444" text-anchor="start">Úvod</text>
+<text x="70" y="98" font-size="12" font-weight="400" fill="#777" text-anchor="start">Úvod  /  Galerie</text>
+<text x="70" y="152" font-size="36" font-weight="700" fill="#222" text-anchor="start">Galerie</text>
+<text x="70" y="204" font-size="16" font-weight="400" fill="#555" text-anchor="start">Snímky z Wikimedia Commons z míst, kde jsem byl. Kliknutím se fotka zvětší.</text>
+<rect x="70" y="280" width="364" height="243" rx="0" fill="#e9e9e9" stroke="#777" stroke-width="1"/>
+<line x1="70" y1="280" x2="434" y2="523" stroke="#bbb" stroke-width="1"/>
+<line x1="434" y1="280" x2="70" y2="523" stroke="#bbb" stroke-width="1"/>
+<rect x="218" y="387" width="69" height="28" rx="0" fill="#e9e9e9" stroke="none" stroke-width="1"/>
+<text x="252" y="406" font-size="12" font-weight="600" fill="#777" text-anchor="middle">FOTO 1</text>
+<rect x="70" y="537" width="180" height="8" rx="4" fill="#ccc" stroke="none" stroke-width="1"/>
+<rect x="458" y="280" width="364" height="243" rx="0" fill="#e9e9e9" stroke="#777" stroke-width="1"/>
+<line x1="458" y1="280" x2="822" y2="523" stroke="#bbb" stroke-width="1"/>
+<line x1="822" y1="280" x2="458" y2="523" stroke="#bbb" stroke-width="1"/>
+<rect x="606" y="387" width="69" height="28" rx="0" fill="#e9e9e9" stroke="none" stroke-width="1"/>
+<text x="640" y="406" font-size="12" font-weight="600" fill="#777" text-anchor="middle">FOTO 2</text>
+<rect x="458" y="537" width="211" height="8" rx="4" fill="#ccc" stroke="none" stroke-width="1"/>
+<rect x="846" y="280" width="364" height="243" rx="0" fill="#e9e9e9" stroke="#777" stroke-width="1"/>
+<line x1="846" y1="280" x2="1210" y2="523" stroke="#bbb" stroke-width="1"/>
+<line x1="1210" y1="280" x2="846" y2="523" stroke="#bbb" stroke-width="1"/>
+<rect x="994" y="387" width="69" height="28" rx="0" fill="#e9e9e9" stroke="none" stroke-width="1"/>
+<text x="1028" y="406" font-size="12" font-weight="600" fill="#777" text-anchor="middle">FOTO 3</text>
+<rect x="846" y="537" width="242" height="8" rx="4" fill="#ccc" stroke="none" stroke-width="1"/>
+<rect x="70" y="579" width="364" height="243" rx="0" fill="#e9e9e9" stroke="#777" stroke-width="1"/>
+<line x1="70" y1="579" x2="434" y2="822" stroke="#bbb" stroke-width="1"/>
+<line x1="434" y1="579" x2="70" y2="822" stroke="#bbb" stroke-width="1"/>
+<rect x="218" y="686" width="69" height="28" rx="0" fill="#e9e9e9" stroke="none" stroke-width="1"/>
+<text x="252" y="705" font-size="12" font-weight="600" fill="#777" text-anchor="middle">FOTO 4</text>
+<rect x="70" y="836" width="273" height="8" rx="4" fill="#ccc" stroke="none" stroke-width="1"/>
+<rect x="458" y="579" width="364" height="243" rx="0" fill="#e9e9e9" stroke="#777" stroke-width="1"/>
+<line x1="458" y1="579" x2="822" y2="822" stroke="#bbb" stroke-width="1"/>
+<line x1="822" y1="579" x2="458" y2="822" stroke="#bbb" stroke-width="1"/>
+<rect x="606" y="686" width="69" height="28" rx="0" fill="#e9e9e9" stroke="none" stroke-width="1"/>
+<text x="640" y="705" font-size="12" font-weight="600" fill="#777" text-anchor="middle">FOTO 5</text>
+<rect x="458" y="836" width="204" height="8" rx="4" fill="#ccc" stroke="none" stroke-width="1"/>
+<rect x="846" y="579" width="364" height="243" rx="0" fill="#e9e9e9" stroke="#777" stroke-width="1"/>
+<line x1="846" y1="579" x2="1210" y2="822" stroke="#bbb" stroke-width="1"/>
+<line x1="1210" y1="579" x2="846" y2="822" stroke="#bbb" stroke-width="1"/>
+<rect x="994" y="686" width="69" height="28" rx="0" fill="#e9e9e9" stroke="none" stroke-width="1"/>
+<text x="1028" y="705" font-size="12" font-weight="600" fill="#777" text-anchor="middle">FOTO 6</text>
+<rect x="846" y="836" width="235" height="8" rx="4" fill="#ccc" stroke="none" stroke-width="1"/>
+<rect x="70" y="878" width="364" height="243" rx="0" fill="#e9e9e9" stroke="#777" stroke-width="1"/>
+<line x1="70" y1="878" x2="434" y2="1121" stroke="#bbb" stroke-width="1"/>
+<line x1="434" y1="878" x2="70" y2="1121" stroke="#bbb" stroke-width="1"/>
+<rect x="218" y="985" width="69" height="28" rx="0" fill="#e9e9e9" stroke="none" stroke-width="1"/>
+<text x="252" y="1004" font-size="12" font-weight="600" fill="#777" text-anchor="middle">FOTO 7</text>
+<rect x="70" y="1135" width="266" height="8" rx="4" fill="#ccc" stroke="none" stroke-width="1"/>
+<rect x="458" y="878" width="364" height="243" rx="0" fill="#e9e9e9" stroke="#777" stroke-width="1"/>
+<line x1="458" y1="878" x2="822" y2="1121" stroke="#bbb" stroke-width="1"/>
+<line x1="822" y1="878" x2="458" y2="1121" stroke="#bbb" stroke-width="1"/>
+<rect x="606" y="985" width="69" height="28" rx="0" fill="#e9e9e9" stroke="none" stroke-width="1"/>
+<text x="640" y="1004" font-size="12" font-weight="600" fill="#777" text-anchor="middle">FOTO 8</text>
+<rect x="458" y="1135" width="197" height="8" rx="4" fill="#ccc" stroke="none" stroke-width="1"/>
+<rect x="846" y="878" width="364" height="243" rx="0" fill="#e9e9e9" stroke="#777" stroke-width="1"/>
+<line x1="846" y1="878" x2="1210" y2="1121" stroke="#bbb" stroke-width="1"/>
+<line x1="1210" y1="878" x2="846" y2="1121" stroke="#bbb" stroke-width="1"/>
+<rect x="994" y="985" width="69" height="28" rx="0" fill="#e9e9e9" stroke="none" stroke-width="1"/>
+<text x="1028" y="1004" font-size="12" font-weight="600" fill="#777" text-anchor="middle">FOTO 9</text>
+<rect x="846" y="1135" width="228" height="8" rx="4" fill="#ccc" stroke="none" stroke-width="1"/>
+<rect x="70" y="1177" width="364" height="243" rx="0" fill="#e9e9e9" stroke="#777" stroke-width="1"/>
+<line x1="70" y1="1177" x2="434" y2="1419" stroke="#bbb" stroke-width="1"/>
+<line x1="434" y1="1177" x2="70" y2="1419" stroke="#bbb" stroke-width="1"/>
+<rect x="214" y="1284" width="76" height="28" rx="0" fill="#e9e9e9" stroke="none" stroke-width="1"/>
+<text x="252" y="1303" font-size="12" font-weight="600" fill="#777" text-anchor="middle">FOTO 10</text>
+<rect x="70" y="1433" width="259" height="8" rx="4" fill="#ccc" stroke="none" stroke-width="1"/>
+<rect x="458" y="1177" width="364" height="243" rx="0" fill="#e9e9e9" stroke="#777" stroke-width="1"/>
+<line x1="458" y1="1177" x2="822" y2="1419" stroke="#bbb" stroke-width="1"/>
+<line x1="822" y1="1177" x2="458" y2="1419" stroke="#bbb" stroke-width="1"/>
+<rect x="602" y="1284" width="76" height="28" rx="0" fill="#e9e9e9" stroke="none" stroke-width="1"/>
+<text x="640" y="1303" font-size="12" font-weight="600" fill="#777" text-anchor="middle">FOTO 11</text>
+<rect x="458" y="1433" width="190" height="8" rx="4" fill="#ccc" stroke="none" stroke-width="1"/>
+<text x="70" y="1529" font-size="22" font-weight="700" fill="#222" text-anchor="start">Zdroje fotografií</text>
+<line x1="70" y1="1555" x2="118" y2="1555" stroke="#222" stroke-width="2"/>
+<rect x="70" y="1573" width="1140" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="70" y="1595" width="627" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="78" y="1635" font-size="13" font-weight="400" fill="#777" text-anchor="start">•</text>
+<rect x="94" y="1628" width="220" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="78" y="1657" font-size="13" font-weight="400" fill="#777" text-anchor="start">•</text>
+<rect x="94" y="1650" width="273" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="78" y="1679" font-size="13" font-weight="400" fill="#777" text-anchor="start">•</text>
+<rect x="94" y="1672" width="326" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="78" y="1701" font-size="13" font-weight="400" fill="#777" text-anchor="start">•</text>
+<rect x="94" y="1694" width="379" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="78" y="1723" font-size="13" font-weight="400" fill="#777" text-anchor="start">•</text>
+<rect x="94" y="1716" width="432" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="78" y="1745" font-size="13" font-weight="400" fill="#777" text-anchor="start">•</text>
+<rect x="94" y="1738" width="265" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="78" y="1767" font-size="13" font-weight="400" fill="#777" text-anchor="start">•</text>
+<rect x="94" y="1760" width="318" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="78" y="1789" font-size="13" font-weight="400" fill="#777" text-anchor="start">•</text>
+<rect x="94" y="1782" width="371" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="78" y="1811" font-size="13" font-weight="400" fill="#777" text-anchor="start">•</text>
+<rect x="94" y="1804" width="424" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="78" y="1833" font-size="13" font-weight="400" fill="#777" text-anchor="start">•</text>
+<rect x="94" y="1826" width="257" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="78" y="1855" font-size="13" font-weight="400" fill="#777" text-anchor="start">•</text>
+<rect x="94" y="1848" width="310" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="70" y="1969" font-size="18" font-weight="700" fill="#222" text-anchor="start">Na hřebenech</text>
+<rect x="70" y="1989" width="441" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="70" y="2011" width="243" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="555" y="1969" font-size="12" font-weight="700" fill="#777" text-anchor="start">ODKAZY</text>
+<text x="555" y="1997" font-size="14" font-weight="400" fill="#222" text-anchor="start">Deník túr</text>
+<text x="555" y="2019" font-size="14" font-weight="400" fill="#222" text-anchor="start">Přihláška na akci</text>
+<text x="555" y="2041" font-size="14" font-weight="400" fill="#222" text-anchor="start">Wireframe webu</text>
+<text x="846" y="1969" font-size="12" font-weight="700" fill="#777" text-anchor="start">DOBRÉ VĚDĚT</text>
+<text x="846" y="1997" font-size="14" font-weight="400" fill="#222" text-anchor="start">Horská služba: 1210</text>
+<rect x="846" y="2011" width="354" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="846" y="2033" width="195" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<line x1="70" y1="2071" x2="1210" y2="2071" stroke="#bbb" stroke-width="1"/>
+<text x="70" y="2099" font-size="12" font-weight="400" fill="#777" text-anchor="start">© 2026 Na hřebenech</text>
+</svg>

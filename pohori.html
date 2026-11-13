@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pohoří – Na hřebenech</title>
+  <meta name="description" content="Přehled pěti českých pohoří, kam jezdím nejčastěji: Krkonoše, Hrubý Jeseník, Šumava, Beskydy a Krušné hory.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 m-2 btn btn-sm btn-primary" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg py-0" aria-label="Hlavní menu">
+      <div class="container">
+        <a class="navbar-brand py-2" href="index.html"><svg width="32" height="22" viewBox="0 0 32 22" aria-hidden="true"><path d="M1 21 10 5l5 8 5-10 11 18Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m7.5 9.5 2.5 1.5 2-1.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span>Na hřebenech<small>deník z českých hor</small></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Otevřít menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house" aria-hidden="true"></i>Úvod</a></li>
+          <li class="nav-item"><a class="nav-link" href="denik.html"><i class="bi bi-journal-text" aria-hidden="true"></i>Deník túr</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pohori.html" aria-current="page"><i class="bi bi-signpost-split" aria-hidden="true"></i>Pohoří</a></li>
+          <li class="nav-item"><a class="nav-link" href="vybava.html"><i class="bi bi-backpack2" aria-hidden="true"></i>Výbava</a></li>
+          <li class="nav-item"><a class="nav-link" href="galerie.html"><i class="bi bi-images" aria-hidden="true"></i>Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="akce.html"><i class="bi bi-people" aria-hidden="true"></i>Společné akce</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="obsah" class="flex-grow-1">
+    <div class="page-head">
+      <div class="container">
+        <nav aria-label="Drobečková navigace">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house" aria-hidden="true"></i> Úvod</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Pohoří</li>
+          </ol>
+        </nav>
+        <h1>Pohoří</h1>
+        <p class="lead mb-0">Pět hor, kam jezdím nejčastěji. Každé má jinou povahu a jinak se do něj jezdí.</p>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="nav nav-tabs" id="rangeTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="tab-krkonose" data-bs-toggle="tab" data-bs-target="#pane-krkonose" type="button" role="tab" aria-controls="pane-krkonose" aria-selected="true">Krkonoše</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-jesenik" data-bs-toggle="tab" data-bs-target="#pane-jesenik" type="button" role="tab" aria-controls="pane-jesenik" aria-selected="false">Hrubý Jeseník</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-sumava" data-bs-toggle="tab" data-bs-target="#pane-sumava" type="button" role="tab" aria-controls="pane-sumava" aria-selected="false">Šumava</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-beskydy" data-bs-toggle="tab" data-bs-target="#pane-beskydy" type="button" role="tab" aria-controls="pane-beskydy" aria-selected="false">Beskydy</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="tab-krusne" data-bs-toggle="tab" data-bs-target="#pane-krusne" type="button" role="tab" aria-controls="pane-krusne" aria-selected="false">Krušné hory</button>
+          </li>
+      </ul>
+      <div class="tab-content tab-content-box" id="rangeTabsContent">
+          <div class="tab-pane fade show active" id="pane-krkonose" role="tabpanel" aria-labelledby="tab-krkonose" tabindex="0">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="img/snezka.jpg" alt="Kaple sv. Vavřince na Sněžce v námraze" loading="lazy" width="1600" height="1200">
+              </div>
+              <div class="col-md-7">
+                <h2 class="h3">Krkonoše</h2>
+                <p>Nejvyšší české hory a taky nejnavštěvovanější. Hřebeny nad hranicí lesa připomínají spíš Skandinávii než střední Evropu, jen je na nich v létě víc lidí.</p>
+                <p>Nejlíp se tu chodí brzy ráno nebo mimo prázdniny. Počasí se mění rychle a mlha u Luční boudy dokáže zmást i lidi, kteří sem jezdí léta.</p>
+                <dl class="row small mb-3">
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Nejvyšší bod</dt><dd class="col-sm-8">Sněžka, 1 603 m</dd>
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Moje túry</dt><dd class="col-sm-8">9, dohromady 121,7 km</dd>
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Doprava</dt><dd class="col-sm-8">Vlakem do Trutnova nebo Vrchlabí, dál autobusem do Pece nebo Špindlerova Mlýna.</dd>
+                </dl>
+                <p class="small text-body-secondary mb-1">Vrcholy, na kterých jsem byl:</p>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="badge badge-range">Sněžka 1 603 m</span>
+                  <span class="badge badge-range">Luční hora 1 555 m</span>
+                  <span class="badge badge-range">Studniční hora 1 554 m</span>
+                  <span class="badge badge-range">Vysoké kolo 1 509 m</span>
+                  <span class="badge badge-range">Kotel 1 435 m</span>
+                  <span class="badge badge-range">Zlaté návrší 1 411 m</span>
+                  <span class="badge badge-range">Černá hora 1 299 m</span>
+                  <span class="badge badge-range">Medvědín 1 235 m</span>
+                  <span class="badge badge-range">Žalý 1 036 m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pane-jesenik" role="tabpanel" aria-labelledby="tab-jesenik" tabindex="0">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="img/praded.jpg" alt="Vysílač na Pradědu" loading="lazy" width="1600" height="1200">
+              </div>
+              <div class="col-md-7">
+                <h2 class="h3">Hrubý Jeseník</h2>
+                <p>Oblé hřbety, dlouhé výstupy a hodně prostoru. Na rozdíl od Krkonoš se tu dá jít celý den po hřebeni a potkat jen pár lidí.</p>
+                <p>Na Praděd vede silnice, takže vrchol bývá rušný. O kilometr dál je ale klid.</p>
+                <dl class="row small mb-3">
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Nejvyšší bod</dt><dd class="col-sm-8">Praděd, 1 491 m</dd>
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Moje túry</dt><dd class="col-sm-8">8, dohromady 92,9 km</dd>
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Doprava</dt><dd class="col-sm-8">Vlakem do Jeseníku, Koutů nad Desnou nebo přímo na Ramzovou.</dd>
+                </dl>
+                <p class="small text-body-secondary mb-1">Vrcholy, na kterých jsem byl:</p>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="badge badge-range">Praděd 1 491 m</span>
+                  <span class="badge badge-range">Vysoká hole 1 464 m</span>
+                  <span class="badge badge-range">Petrovy kameny 1 446 m</span>
+                  <span class="badge badge-range">Keprník 1 423 m</span>
+                  <span class="badge badge-range">Velký Máj 1 385 m</span>
+                  <span class="badge badge-range">Dlouhé stráně 1 354 m</span>
+                  <span class="badge badge-range">Šerák 1 351 m</span>
+                  <span class="badge badge-range">Červená hora 1 333 m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pane-sumava" role="tabpanel" aria-labelledby="tab-sumava" tabindex="0">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="img/boubin.jpg" alt="Lavička cestou na Boubín" loading="lazy" width="1600" height="1200">
+              </div>
+              <div class="col-md-7">
+                <h2 class="h3">Šumava</h2>
+                <p>Lesy, rašeliniště a velké vzdálenosti. Vrcholy nejsou nijak dramatické, zato se dá jít hodiny bez jediné vesnice.</p>
+                <p>Část území je v bezzásahové zóně národního parku a některé cesty jsou otevřené jen v sezóně. Před cestou se vyplatí zkontrolovat web NP Šumava.</p>
+                <dl class="row small mb-3">
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Nejvyšší bod</dt><dd class="col-sm-8">Plechý, 1 378 m (česká strana)</dd>
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Moje túry</dt><dd class="col-sm-8">9, dohromady 124,0 km</dd>
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Doprava</dt><dd class="col-sm-8">Vlakem do Nové Pece, Volar nebo Železné Rudy.</dd>
+                </dl>
+                <p class="small text-body-secondary mb-1">Vrcholy, na kterých jsem byl:</p>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="badge badge-range">Plechý 1 378 m</span>
+                  <span class="badge badge-range">Luzný 1 373 m</span>
+                  <span class="badge badge-range">Boubín 1 362 m</span>
+                  <span class="badge badge-range">Trojmezná 1 361 m</span>
+                  <span class="badge badge-range">Poledník 1 315 m</span>
+                  <span class="badge badge-range">Ostrý 1 293 m</span>
+                  <span class="badge badge-range">Pancíř 1 214 m</span>
+                  <span class="badge badge-range">Špičák 1 202 m</span>
+                  <span class="badge badge-range">Churáňov 1 122 m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pane-beskydy" role="tabpanel" aria-labelledby="tab-beskydy" tabindex="0">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="img/radhost.jpg" alt="Inverze nad Beskydami z kaple na Radhošti" loading="lazy" width="1600" height="1200">
+              </div>
+              <div class="col-md-7">
+                <h2 class="h3">Beskydy</h2>
+                <p>Strmé kopce s velkým převýšením, dobré hospody na hřebenech a legendy o Radegastovi.</p>
+                <p>Na Lysou horu se chodí z Ostravice, Malenovic nebo Krásné. Všechny cesty jdou do kopce od prvního kroku.</p>
+                <dl class="row small mb-3">
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Nejvyšší bod</dt><dd class="col-sm-8">Lysá hora, 1 323 m</dd>
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Moje túry</dt><dd class="col-sm-8">6, dohromady 71,1 km</dd>
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Doprava</dt><dd class="col-sm-8">Vlakem do Frýdlantu nad Ostravicí nebo Ostravice, na Pustevny autobusem z Rožnova.</dd>
+                </dl>
+                <p class="small text-body-secondary mb-1">Vrcholy, na kterých jsem byl:</p>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="badge badge-range">Lysá hora 1 323 m</span>
+                  <span class="badge badge-range">Smrk 1 276 m</span>
+                  <span class="badge badge-range">Kněhyně 1 257 m</span>
+                  <span class="badge badge-range">Travný 1 203 m</span>
+                  <span class="badge badge-range">Radhošť 1 129 m</span>
+                  <span class="badge badge-range">Javorový vrch 1 032 m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pane-krusne" role="tabpanel" aria-labelledby="tab-krusne" tabindex="0">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="img/klinovec.jpg" alt="Klínovec v červnu" loading="lazy" width="1600" height="1200">
+              </div>
+              <div class="col-md-7">
+                <h2 class="h3">Krušné hory</h2>
+                <p>Z české strany strmý sráz, nahoře náhorní plošina s rašeliništi a zaniklými vesnicemi.</p>
+                <p>Nejhezčí jsou na podzim, kdy je čistý vzduch a z hřebene je vidět až do Českého středohoří.</p>
+                <dl class="row small mb-3">
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Nejvyšší bod</dt><dd class="col-sm-8">Klínovec, 1 244 m</dd>
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Moje túry</dt><dd class="col-sm-8">4, dohromady 29,1 km</dd>
+                  <dt class="col-sm-4 fw-normal text-body-secondary">Doprava</dt><dd class="col-sm-8">Vlakem do Kovářské nebo Vejprt, na Boží Dar autobusem z Karlových Varů.</dd>
+                </dl>
+                <p class="small text-body-secondary mb-1">Vrcholy, na kterých jsem byl:</p>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="badge badge-range">Klínovec 1 244 m</span>
+                  <span class="badge badge-range">Božídarský Špičák 1 115 m</span>
+                  <span class="badge badge-range">Bouřňák 869 m</span>
+                  <span class="badge badge-range">Komáří vížka 808 m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <h2 class="section-title mt-5">Praktické poznámky</h2>
+      <div class="accordion" id="tips">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tip1" aria-expanded="true" aria-controls="tip1">Počasí</button>
+          </h3>
+          <div id="tip1" class="accordion-collapse collapse show" data-bs-parent="#tips">
+            <div class="accordion-body">Předpověď pro nížinu na hory neplatí. Na hřebeni bývá o 6 až 10 °C méně a vítr je výrazně silnější. Dívám se na horské předpovědi ČHMÚ a na webkamery, které ukážou, jestli nahoře není mlha.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tip2" aria-expanded="false" aria-controls="tip2">Značení a mapy</button>
+          </h3>
+          <div id="tip2" class="accordion-collapse collapse" data-bs-parent="#tips">
+            <div class="accordion-body">Značení Klubu českých turistů je jedno z nejlepších v Evropě a většinou stačí. Mapu v telefonu mám stejně stáhnutou offline, protože v údolích často není signál.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tip3" aria-expanded="false" aria-controls="tip3">Když se něco pokazí</button>
+          </h3>
+          <div id="tip3" class="accordion-collapse collapse" data-bs-parent="#tips">
+            <div class="accordion-body">Horská služba má číslo <strong>1210</strong>, jinak platí 112. Vyplatí se mít v telefonu aplikaci Záchranka, která při volání pošle přesnou polohu.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer mt-5 pt-4 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <p class="h5 text-white display-font mb-2">Na hřebenech</p>
+          <p class="mb-0">Osobní deník túr po českých horách. Semestrální projekt do předmětu KIP/7REWB.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2>Odkazy</h2>
+          <ul class="list-unstyled mb-0">
+            <li><a href="denik.html">Deník túr</a></li>
+            <li><a href="akce.html#prihlaska">Přihláška na akci</a></li>
+            <li><a href="wireframe/wireframe.html">Wireframe webu</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h2>Dobré vědět</h2>
+          <p class="mb-1">Horská služba: <a href="tel:1210">1210</a></p>
+          <p class="mb-0">Fotografie jsou z Wikimedia Commons, autoři jsou uvedeni v <a href="galerie.html#zdroje">galerii</a>.</p>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4 mb-3">
+      <p class="small mb-0">© 2026 Na hřebenech</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

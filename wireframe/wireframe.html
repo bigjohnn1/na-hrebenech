@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wireframe – Na hřebenech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+  <main class="container py-4">
+    <nav aria-label="Drobečková navigace">
+      <ol class="breadcrumb small">
+        <li class="breadcrumb-item"><a href="../index.html">Úvod</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Wireframe</li>
+      </ol>
+    </nav>
+    <h1>Wireframe úvodní stránky na mobilu</h1>
+    <p class="lead">Rozvržení domovské stránky na běžném smartphonu o šířce 390 px. Na mobilu jsou všechny bloky pod sebou v jednom sloupci, pořadí odpovídá pořadí v HTML.</p>
+
+    <div class="row g-5 mt-1">
+      <div class="col-lg-5 text-center">
+        <img src="wireframe.svg" alt="Wireframe úvodní stránky na mobilu s očíslovanými bloky 1 až 8" class="img-fluid" width="440" height="1610">
+      </div>
+      <div class="col-lg-7">
+        <h2 class="section-title">Popis prvků</h2>
+        <ol class="ps-3">
+          <li class="mb-3"><strong>Hlavička.</strong> Logo (ikona hor a textový název „Na hřebenech“ s podtitulem) vlevo, vpravo tlačítko „hamburger“. Po kliknutí se rozbalí menu se šesti položkami s ikonami: Úvod, Deník túr, Pohoří, Výbava, Galerie, Společné akce. Hlavička zůstává při scrollování přilepená nahoře.</li>
+          <li class="mb-3"><strong>Carousel.</strong> Hned pod menu, přes celou šířku displeje. Čtyři rotující fotografie hor se šipkami pro ruční přepnutí. Na mobilu je text popisku pod fotkou v tmavém pruhu, aby nezakrýval obrázek; na větších displejích leží přes fotku.</li>
+          <li class="mb-3"><strong>Nadpis a úvodní text.</strong> Hlavní nadpis stránky (h1) a tři krátké odstavce o tom, o čem web je.</li>
+          <li class="mb-3"><strong>Tlačítka.</strong> Hlavní akce „Otevřít deník“ (plné tlačítko), vedlejší „Přehled pohoří“ (obrysové) a textový odkaz na výbavu. Na úzkém displeji se zalamují do dalšího řádku.</li>
+          <li class="mb-3"><strong>Statistiky.</strong> Karta se čtyřmi čísly ve mřížce 2 × 2: počet túr, kilometry, převýšení, nejvyšší vrchol. Na desktopu je karta v pravém sloupci vedle textu.</li>
+          <li class="mb-3"><strong>Poslední túry.</strong> Seznam pěti posledních túr (list group). Každý řádek obsahuje vrchol, datum, výchozí bod, štítek s pohořím a délku. Celý řádek je odkaz do deníku.</li>
+          <li class="mb-3"><strong>Nejbližší společná akce.</strong> Karta s datem, trasou a dvěma tlačítky. „Přihlásit se“ vede na formulář, „Co s sebou“ otevře modální okno se seznamem věcí.</li>
+          <li class="mb-3"><strong>Patička.</strong> Název webu, krátký popis, rychlé odkazy a informace o zdrojích fotografií. Na mobilu jsou sloupce patičky pod sebou, respektive po dvou vedle sebe.</li>
+        </ol>
+
+        <h2 class="section-title mt-4">Struktura webu</h2>
+        <ul class="ps-3">
+          <li><strong>Úvod</strong> (index.html): carousel, úvodní text, statistiky, poslední túry, nejbližší akce, modální okno</li>
+          <li><strong>Deník túr</strong> (denik.html): tabulka DataTables s 69 záznamy, stránkováním, řazením a vyhledáváním; modální okno s detailem túry</li>
+          <li><strong>Pohoří</strong> (pohori.html): pět záložek (tabs) s popisem pohoří, akordeon s praktickými poznámkami</li>
+          <li><strong>Výbava</strong> (vybava.html): karty se seznamy věcí, skládaný progress bar s hmotností, akordeon</li>
+          <li><strong>Galerie</strong> (galerie.html): mřížka fotografií, zvětšení v modálním okně, zdroje fotografií</li>
+          <li><strong>Společné akce</strong> (akce.html): tabulka termínů, přihláška s 16 poli, input groups, validace a toast po uložení</li>
+        </ul>
+        <a class="btn btn-primary mt-2" href="../index.html">Zpět na web</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

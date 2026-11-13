@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galerie – Na hřebenech</title>
+  <meta name="description" content="Fotografie z míst, kde jsem byl na túře.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 m-2 btn btn-sm btn-primary" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg py-0" aria-label="Hlavní menu">
+      <div class="container">
+        <a class="navbar-brand py-2" href="index.html"><svg width="32" height="22" viewBox="0 0 32 22" aria-hidden="true"><path d="M1 21 10 5l5 8 5-10 11 18Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m7.5 9.5 2.5 1.5 2-1.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span>Na hřebenech<small>deník z českých hor</small></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Otevřít menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house" aria-hidden="true"></i>Úvod</a></li>
+          <li class="nav-item"><a class="nav-link" href="denik.html"><i class="bi bi-journal-text" aria-hidden="true"></i>Deník túr</a></li>
+          <li class="nav-item"><a class="nav-link" href="pohori.html"><i class="bi bi-signpost-split" aria-hidden="true"></i>Pohoří</a></li>
+          <li class="nav-item"><a class="nav-link" href="vybava.html"><i class="bi bi-backpack2" aria-hidden="true"></i>Výbava</a></li>
+          <li class="nav-item"><a class="nav-link active" href="galerie.html" aria-current="page"><i class="bi bi-images" aria-hidden="true"></i>Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="akce.html"><i class="bi bi-people" aria-hidden="true"></i>Společné akce</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="obsah" class="flex-grow-1">
+    <div class="page-head">
+      <div class="container">
+        <nav aria-label="Drobečková navigace">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house" aria-hidden="true"></i> Úvod</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Galerie</li>
+          </ol>
+        </nav>
+        <h1>Galerie</h1>
+        <p class="lead mb-0">Moje fotky z telefonu jsou většinou rozmazané a nakřivo, takže tady jsou snímky z Wikimedia Commons z míst, kde jsem byl. Kliknutím se fotka zvětší.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <figure class="mb-0">
+            <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="img/lysa-hora.jpg" data-caption="Cesta na Lysou horu po prvním sněhu" data-credit="Tadeáš Bednarz, CC BY-SA 4.0">
+              <img src="img/thumbs/lysa-hora.jpg" alt="Cesta na Lysou horu po prvním sněhu" loading="lazy" width="640" height="427">
+            </button>
+            <figcaption>Cesta na Lysou horu po prvním sněhu</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="mb-0">
+            <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="img/klinovec.jpg" data-caption="Klínovec v červnu" data-credit="Petr Kinšt, CC BY-SA 3.0">
+              <img src="img/thumbs/klinovec.jpg" alt="Klínovec v červnu" loading="lazy" width="640" height="427">
+            </button>
+            <figcaption>Klínovec v červnu</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="mb-0">
+            <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="img/radhost.jpg" data-caption="Inverze nad Beskydami z kaple na Radhošti" data-credit="Bjalek Michal, CC BY-SA 3.0">
+              <img src="img/thumbs/radhost.jpg" alt="Inverze nad Beskydami z kaple na Radhošti" loading="lazy" width="640" height="427">
+            </button>
+            <figcaption>Inverze nad Beskydami z kaple na Radhošti</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="mb-0">
+            <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="img/jested.jpg" data-caption="Ještěd na jaře" data-credit="Bernd Gutte, CC BY-SA 3.0">
+              <img src="img/thumbs/jested.jpg" alt="Ještěd na jaře" loading="lazy" width="640" height="427">
+            </button>
+            <figcaption>Ještěd na jaře</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="mb-0">
+            <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="img/snezka.jpg" data-caption="Kaple sv. Vavřince na Sněžce v námraze" data-credit="Pudelek, CC BY-SA 4.0">
+              <img src="img/thumbs/snezka.jpg" alt="Kaple sv. Vavřince na Sněžce v námraze" loading="lazy" width="640" height="427">
+            </button>
+            <figcaption>Kaple sv. Vavřince na Sněžce v námraze</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="mb-0">
+            <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="img/praded.jpg" data-caption="Vysílač na Pradědu" data-credit="Michal Klajban, CC BY-SA 4.0">
+              <img src="img/thumbs/praded.jpg" alt="Vysílač na Pradědu" loading="lazy" width="640" height="427">
+            </button>
+            <figcaption>Vysílač na Pradědu</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="mb-0">
+            <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="img/milesovka.jpg" data-caption="Milešovka ze zříceniny hradu Oparno" data-credit="Juan de Vojníkov, CC BY-SA 3.0">
+              <img src="img/thumbs/milesovka.jpg" alt="Milešovka ze zříceniny hradu Oparno" loading="lazy" width="640" height="427">
+            </button>
+            <figcaption>Milešovka ze zříceniny hradu Oparno</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="mb-0">
+            <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="img/velka-destna.jpg" data-caption="Velká Deštná večer před bouřkou" data-credit="Pavel Kovaříček, CC BY-SA 4.0">
+              <img src="img/thumbs/velka-destna.jpg" alt="Velká Deštná večer před bouřkou" loading="lazy" width="640" height="427">
+            </button>
+            <figcaption>Velká Deštná večer před bouřkou</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="mb-0">
+            <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="img/kralicky-sneznik.jpg" data-caption="Borůvčí na Malém Sněžníku" data-credit="MyName (Don Pedro28), CC BY-SA 3.0">
+              <img src="img/thumbs/kralicky-sneznik.jpg" alt="Borůvčí na Malém Sněžníku" loading="lazy" width="640" height="427">
+            </button>
+            <figcaption>Borůvčí na Malém Sněžníku</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="mb-0">
+            <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="img/boubin.jpg" data-caption="Lavička cestou na Boubín" data-credit="Safranek-interia.eu, CC0">
+              <img src="img/thumbs/boubin.jpg" alt="Lavička cestou na Boubín" loading="lazy" width="640" height="427">
+            </button>
+            <figcaption>Lavička cestou na Boubín</figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <figure class="mb-0">
+            <button type="button" class="gallery-item" data-bs-toggle="modal" data-bs-target="#photoModal" data-src="img/louka.jpg" data-caption="Louka v přírodní památce Tichá říčka" data-credit="MartinVeselka, CC BY-SA 4.0">
+              <img src="img/thumbs/louka.jpg" alt="Louka v přírodní památce Tichá říčka" loading="lazy" width="640" height="427">
+            </button>
+            <figcaption>Louka v přírodní památce Tichá říčka</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <section id="zdroje" class="mt-5" aria-labelledby="sources-title">
+        <h2 id="sources-title" class="section-title">Zdroje fotografií</h2>
+        <p class="small">Všechny fotografie pocházejí z <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> a jsou použity v souladu s licencí. Pro web byly zmenšeny.</p>
+        <ul class="small">
+          <li>Cesta na Lysou horu po prvním sněhu: <a href="https://commons.wikimedia.org/wiki/File:Path_to_Lys%C3%A1_hora_2021_03.jpg" target="_blank" rel="noopener">Tadeáš Bednarz</a>, CC BY-SA 4.0</li>
+          <li>Klínovec v červnu: <a href="https://commons.wikimedia.org/wiki/File:Kl%C3%ADnovec_2014-06-08.jpg" target="_blank" rel="noopener">Petr Kinšt</a>, CC BY-SA 3.0</li>
+          <li>Inverze nad Beskydami z kaple na Radhošti: <a href="https://commons.wikimedia.org/wiki/File:Kaple_sv._Cyrila_a_Metod%C4%9Bje_(Doln%C3%AD_Be%C4%8Dva)_-_pohled_na_Beskydy_z_v%C4%9B%C5%BEi%C4%8Dky.JPG" target="_blank" rel="noopener">Bjalek Michal</a>, CC BY-SA 3.0</li>
+          <li>Ještěd na jaře: <a href="https://commons.wikimedia.org/wiki/File:Jested.jpg" target="_blank" rel="noopener">Bernd Gutte</a>, CC BY-SA 3.0</li>
+          <li>Kaple sv. Vavřince na Sněžce v námraze: <a href="https://commons.wikimedia.org/wiki/File:Chapel_of_Saint_Lawrence,_%C5%9Anie%C5%BCka_(Schneekoppe,_Sn%C4%9B%C5%BEka).jpg" target="_blank" rel="noopener">Pudelek</a>, CC BY-SA 4.0</li>
+          <li>Vysílač na Pradědu: <a href="https://commons.wikimedia.org/wiki/File:Prad%C4%9Bd_v_Jesen%C3%ADk%C3%A1ch_03.jpg" target="_blank" rel="noopener">Michal Klajban</a>, CC BY-SA 4.0</li>
+          <li>Milešovka ze zříceniny hradu Oparno: <a href="https://commons.wikimedia.org/wiki/File:Hrad_Oparno,_ze%C4%8F_a_Mile%C5%A1ovka.JPG" target="_blank" rel="noopener">Juan de Vojníkov</a>, CC BY-SA 3.0</li>
+          <li>Velká Deštná večer před bouřkou: <a href="https://commons.wikimedia.org/wiki/File:Velk%C3%A1_De%C5%A1tn%C3%A1.jpg" target="_blank" rel="noopener">Pavel Kovaříček</a>, CC BY-SA 4.0</li>
+          <li>Borůvčí na Malém Sněžníku: <a href="https://commons.wikimedia.org/wiki/File:Mal%C3%BD_Sn%C4%9B%C5%BEn%C3%ADk_vrchol_2.JPG" target="_blank" rel="noopener">MyName (Don Pedro28)</a>, CC BY-SA 3.0</li>
+          <li>Lavička cestou na Boubín: <a href="https://commons.wikimedia.org/wiki/File:Boub%C3%ADn_-_lavi%C4%8Dka.JPG" target="_blank" rel="noopener">Safranek-interia.eu</a>, CC0</li>
+          <li>Louka v přírodní památce Tichá říčka: <a href="https://commons.wikimedia.org/wiki/File:PP_Tich%C3%A1_%C5%99%C3%AD%C4%8Dka_(1).jpg" target="_blank" rel="noopener">MartinVeselka</a>, CC BY-SA 4.0</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="modal fade" id="photoModal" tabindex="-1" aria-labelledby="photoModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="photoModalTitle">Fotografie</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+          </div>
+          <div class="modal-body p-0">
+            <img class="w-100 d-block" src="" alt="">
+          </div>
+          <div class="modal-footer justify-content-between">
+            <small class="text-body-secondary" data-field="credit"></small>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer mt-5 pt-4 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <p class="h5 text-white display-font mb-2">Na hřebenech</p>
+          <p class="mb-0">Osobní deník túr po českých horách. Semestrální projekt do předmětu KIP/7REWB.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2>Odkazy</h2>
+          <ul class="list-unstyled mb-0">
+            <li><a href="denik.html">Deník túr</a></li>
+            <li><a href="akce.html#prihlaska">Přihláška na akci</a></li>
+            <li><a href="wireframe/wireframe.html">Wireframe webu</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h2>Dobré vědět</h2>
+          <p class="mb-1">Horská služba: <a href="tel:1210">1210</a></p>
+          <p class="mb-0">Fotografie jsou z Wikimedia Commons, autoři jsou uvedeni v <a href="galerie.html#zdroje">galerii</a>.</p>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4 mb-3">
+      <p class="small mb-0">© 2026 Na hřebenech</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

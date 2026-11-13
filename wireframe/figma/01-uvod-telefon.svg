@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="2268" viewBox="0 0 390 2268" font-family="Inter, Segoe UI, Arial, sans-serif">
+<title>Úvod – index.html</title>
+<rect x="0" y="0" width="390" height="2268" fill="#fff"/>
+<rect x="0" y="1962" width="390" height="306" fill="#e9e9e9" stroke="none"/>
+<rect x="16" y="1624" width="358" height="274" rx="8" fill="#fff" stroke="#bbb"/>
+<rect x="0" y="0" width="390" height="60" rx="0" fill="#fff" stroke="#777" stroke-width="1"/>
+<path d="M16 42.0 25 26.0l5 8 5-10 11 18Z" fill="none" stroke="#222" stroke-width="2"/>
+<text x="58" y="38" font-size="20" font-weight="700" fill="#222" text-anchor="start">Na hřebenech</text>
+<rect x="330" y="12" width="44" height="36" rx="6" fill="#fff" stroke="#777" stroke-width="1"/>
+<line x1="342" y1="22" x2="362" y2="22" stroke="#222" stroke-width="2"/>
+<line x1="342" y1="30" x2="362" y2="30" stroke="#222" stroke-width="2"/>
+<line x1="342" y1="38" x2="362" y2="38" stroke="#222" stroke-width="2"/>
+<rect x="0" y="60" width="390" height="230" rx="0" fill="#e9e9e9" stroke="#777" stroke-width="1"/>
+<line x1="0" y1="60" x2="390" y2="290" stroke="#bbb" stroke-width="1"/>
+<line x1="390" y1="60" x2="0" y2="290" stroke="#bbb" stroke-width="1"/>
+<rect x="112" y="161" width="166" height="28" rx="0" fill="#e9e9e9" stroke="none" stroke-width="1"/>
+<text x="195" y="180" font-size="12" font-weight="600" fill="#777" text-anchor="middle">CAROUSEL (4 snímky)</text>
+<text x="14" y="187" font-size="36" font-weight="300" fill="#777" text-anchor="start">‹</text>
+<text x="360" y="187" font-size="36" font-weight="300" fill="#777" text-anchor="start">›</text>
+<rect x="0" y="290" width="390" height="76" rx="0" fill="#555" stroke="none" stroke-width="1"/>
+<text x="16" y="320" font-size="16" font-weight="700" fill="#fff" text-anchor="start">Nadpis snímku</text>
+<rect x="16" y="336" width="260" height="7" rx="4" fill="#999" stroke="none" stroke-width="1"/>
+<text x="16" y="428" font-size="30" font-weight="700" fill="#222" text-anchor="start">Deník z českých hor</text>
+<rect x="16" y="474" width="358" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="16" y="496" width="344" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="16" y="518" width="354" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="16" y="540" width="197" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="16" y="576" width="358" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="16" y="598" width="344" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="16" y="620" width="197" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="16" y="656" width="197" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="16" y="698" width="138" height="38" rx="6" fill="#777" stroke="#777" stroke-width="1.5"/>
+<text x="85" y="722" font-size="14" font-weight="600" fill="#fff" text-anchor="middle">Otevřít deník</text>
+<rect x="164" y="698" width="146" height="38" rx="6" fill="#fff" stroke="#777" stroke-width="1.5"/>
+<text x="237" y="722" font-size="14" font-weight="600" fill="#222" text-anchor="middle">Přehled pohoří</text>
+<text x="28" y="770" font-size="14" font-weight="400" fill="#222" text-anchor="start">Co nosím v batohu →</text>
+<line x1="28" y1="774" x2="186" y2="774" stroke="#222" stroke-width="1"/>
+<rect x="16" y="816" width="358" height="250" rx="8" fill="#fff" stroke="#bbb" stroke-width="1"/>
+<text x="40" y="856" font-size="18" font-weight="700" fill="#222" text-anchor="start">Od března 2024</text>
+<text x="40" y="892" font-size="11" font-weight="600" fill="#777" text-anchor="start">TÚR</text>
+<text x="40" y="924" font-size="24" font-weight="700" fill="#222" text-anchor="start">69</text>
+<text x="195" y="892" font-size="11" font-weight="600" fill="#777" text-anchor="start">KILOMETRŮ</text>
+<text x="195" y="924" font-size="24" font-weight="700" fill="#222" text-anchor="start">751</text>
+<text x="40" y="962" font-size="11" font-weight="600" fill="#777" text-anchor="start">NASTOUPÁNO</text>
+<text x="40" y="994" font-size="24" font-weight="700" fill="#222" text-anchor="start">33 190 m</text>
+<text x="195" y="962" font-size="11" font-weight="600" fill="#777" text-anchor="start">NEJVÝŠ</text>
+<text x="195" y="994" font-size="24" font-weight="700" fill="#222" text-anchor="start">Sněžka</text>
+<rect x="40" y="1034" width="200" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="16" y="1142" font-size="20" font-weight="700" fill="#222" text-anchor="start">Poslední túry</text>
+<line x1="16" y1="1166" x2="64" y2="1166" stroke="#222" stroke-width="2"/>
+<rect x="16" y="1184" width="358" height="66" rx="0" fill="#fff" stroke="#bbb" stroke-width="1"/>
+<rect x="32" y="1202" width="110" height="10" rx="4" fill="#bbb" stroke="none" stroke-width="1"/>
+<rect x="32" y="1224" width="170" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="268" y="1198" width="90" height="18" rx="9" fill="#fff" stroke="#777" stroke-width="1"/>
+<text x="313" y="1211" font-size="11" font-weight="600" fill="#777" text-anchor="middle">pohoří</text>
+<text x="358" y="1236" font-size="12" font-weight="400" fill="#777" text-anchor="end">00,0 km</text>
+<rect x="16" y="1250" width="358" height="66" rx="0" fill="#fff" stroke="#bbb" stroke-width="1"/>
+<rect x="32" y="1268" width="123" height="10" rx="4" fill="#bbb" stroke="none" stroke-width="1"/>
+<rect x="32" y="1290" width="170" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="268" y="1264" width="90" height="18" rx="9" fill="#fff" stroke="#777" stroke-width="1"/>
+<text x="313" y="1277" font-size="11" font-weight="600" fill="#777" text-anchor="middle">pohoří</text>
+<text x="358" y="1302" font-size="12" font-weight="400" fill="#777" text-anchor="end">00,0 km</text>
+<rect x="16" y="1316" width="358" height="66" rx="0" fill="#fff" stroke="#bbb" stroke-width="1"/>
+<rect x="32" y="1334" width="136" height="10" rx="4" fill="#bbb" stroke="none" stroke-width="1"/>
+<rect x="32" y="1356" width="170" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="268" y="1330" width="90" height="18" rx="9" fill="#fff" stroke="#777" stroke-width="1"/>
+<text x="313" y="1343" font-size="11" font-weight="600" fill="#777" text-anchor="middle">pohoří</text>
+<text x="358" y="1368" font-size="12" font-weight="400" fill="#777" text-anchor="end">00,0 km</text>
+<rect x="16" y="1382" width="358" height="66" rx="0" fill="#fff" stroke="#bbb" stroke-width="1"/>
+<rect x="32" y="1400" width="149" height="10" rx="4" fill="#bbb" stroke="none" stroke-width="1"/>
+<rect x="32" y="1422" width="170" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="268" y="1396" width="90" height="18" rx="9" fill="#fff" stroke="#777" stroke-width="1"/>
+<text x="313" y="1409" font-size="11" font-weight="600" fill="#777" text-anchor="middle">pohoří</text>
+<text x="358" y="1434" font-size="12" font-weight="400" fill="#777" text-anchor="end">00,0 km</text>
+<rect x="16" y="1448" width="358" height="66" rx="0" fill="#fff" stroke="#bbb" stroke-width="1"/>
+<rect x="32" y="1466" width="112" height="10" rx="4" fill="#bbb" stroke="none" stroke-width="1"/>
+<rect x="32" y="1488" width="170" height="7" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="268" y="1462" width="90" height="18" rx="9" fill="#fff" stroke="#777" stroke-width="1"/>
+<text x="313" y="1475" font-size="11" font-weight="600" fill="#777" text-anchor="middle">pohoří</text>
+<text x="358" y="1500" font-size="12" font-weight="400" fill="#777" text-anchor="end">00,0 km</text>
+<text x="16" y="1582" font-size="20" font-weight="700" fill="#222" text-anchor="start">Nejbližší společná akce</text>
+<line x1="16" y1="1606" x2="64" y2="1606" stroke="#222" stroke-width="2"/>
+<rect x="40" y="1646" width="13" height="13" rx="3" fill="none" stroke="#777" stroke-width="1"/>
+<text x="60" y="1658" font-size="14" font-weight="600" fill="#222" text-anchor="start">so 17. 10. 2026</text>
+<text x="40" y="1692" font-size="20" font-weight="700" fill="#222" text-anchor="start">Jizerské hory</text>
+<rect x="40" y="1712" width="310" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="40" y="1734" width="298" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="40" y="1756" width="170" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="40" y="1788" width="130" height="38" rx="6" fill="#777" stroke="#777" stroke-width="1.5"/>
+<text x="105" y="1812" font-size="14" font-weight="600" fill="#fff" text-anchor="middle">Přihlásit se</text>
+<rect x="40" y="1836" width="178" height="38" rx="6" fill="#fff" stroke="#777" stroke-width="1.5"/>
+<text x="129" y="1860" font-size="14" font-weight="600" fill="#222" text-anchor="middle">Co s sebou (modal)</text>
+<text x="16" y="2008" font-size="18" font-weight="700" fill="#222" text-anchor="start">Na hřebenech</text>
+<rect x="16" y="2028" width="338" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="16" y="2050" width="186" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<text x="16" y="2118" font-size="12" font-weight="700" fill="#777" text-anchor="start">ODKAZY</text>
+<text x="16" y="2146" font-size="14" font-weight="400" fill="#222" text-anchor="start">Deník túr</text>
+<text x="16" y="2168" font-size="14" font-weight="400" fill="#222" text-anchor="start">Přihláška na akci</text>
+<text x="16" y="2190" font-size="14" font-weight="400" fill="#222" text-anchor="start">Wireframe webu</text>
+<text x="207" y="2118" font-size="12" font-weight="700" fill="#777" text-anchor="start">DOBRÉ VĚDĚT</text>
+<text x="207" y="2146" font-size="14" font-weight="400" fill="#222" text-anchor="start">Horská služba: 1210</text>
+<rect x="207" y="2160" width="157" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<rect x="207" y="2182" width="86" height="8" rx="4" fill="#ddd" stroke="none" stroke-width="1"/>
+<line x1="16" y1="2220" x2="374" y2="2220" stroke="#bbb" stroke-width="1"/>
+<text x="16" y="2248" font-size="12" font-weight="400" fill="#777" text-anchor="start">© 2026 Na hřebenech</text>
+</svg>

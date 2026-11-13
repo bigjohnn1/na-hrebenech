@@ -1,0 +1,968 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deník túr – Na hřebenech</title>
+  <meta name="description" content="Tabulka všech 69 túr s datem, pohořím, délkou a převýšením.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <a class="visually-hidden-focusable position-absolute top-0 start-0 m-2 btn btn-sm btn-primary" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg py-0" aria-label="Hlavní menu">
+      <div class="container">
+        <a class="navbar-brand py-2" href="index.html"><svg width="32" height="22" viewBox="0 0 32 22" aria-hidden="true"><path d="M1 21 10 5l5 8 5-10 11 18Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m7.5 9.5 2.5 1.5 2-1.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span>Na hřebenech<small>deník z českých hor</small></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Otevřít menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house" aria-hidden="true"></i>Úvod</a></li>
+          <li class="nav-item"><a class="nav-link active" href="denik.html" aria-current="page"><i class="bi bi-journal-text" aria-hidden="true"></i>Deník túr</a></li>
+          <li class="nav-item"><a class="nav-link" href="pohori.html"><i class="bi bi-signpost-split" aria-hidden="true"></i>Pohoří</a></li>
+          <li class="nav-item"><a class="nav-link" href="vybava.html"><i class="bi bi-backpack2" aria-hidden="true"></i>Výbava</a></li>
+          <li class="nav-item"><a class="nav-link" href="galerie.html"><i class="bi bi-images" aria-hidden="true"></i>Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="akce.html"><i class="bi bi-people" aria-hidden="true"></i>Společné akce</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="obsah" class="flex-grow-1">
+    <div class="page-head">
+      <div class="container">
+        <nav aria-label="Drobečková navigace">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house" aria-hidden="true"></i> Úvod</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Deník túr</li>
+          </ol>
+        </nav>
+        <h1>Deník túr</h1>
+        <p class="lead mb-0">Všech 69 túr od března 2024. Kliknutím na záhlaví sloupce se tabulka seřadí, vyhledávat jde podle vrcholu i pohoří.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="alert alert-light border d-flex gap-2 small" role="note">
+        <i class="bi bi-info-circle text-rust" aria-hidden="true"></i>
+        <div>Převýšení je součet stoupání z hodinek, takže ho berte jako odhad. Hodnocení je čistě subjektivní: pět hvězd znamená, že bych tam šel hned znovu.</div>
+      </div>
+      <div class="table-responsive">
+        <table id="hikes" class="table table-striped table-hover align-middle w-100">
+          <caption class="visually-hidden">Seznam túr</caption>
+          <thead>
+            <tr>
+              <th scope="col">Datum</th>
+              <th scope="col">Vrchol</th>
+              <th scope="col">Pohoří</th>
+              <th scope="col" class="text-end">Výška (m)</th>
+              <th scope="col" class="text-end">Délka (km)</th>
+              <th scope="col" class="text-end">Převýšení (m)</th>
+              <th scope="col">Hodnocení</th>
+              <th scope="col" class="text-end"><span class="visually-hidden">Detail</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-order="2026-09-20" class="text-nowrap">20. 9. 2026</td>
+              <td class="fw-semibold">Vysoké kolo</td>
+              <td>Krkonoše</td>
+              <td class="text-end" data-order="1509">1 509</td>
+              <td class="text-end" data-order="18">18,0</td>
+              <td class="text-end" data-order="890">890</td>
+              <td data-order="5"><span class="stars" aria-label="5 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Vysoké kolo" data-date="20. 9. 2026" data-range="Krkonoše" data-height="1 509" data-start="Špindlerův Mlýn"
+                data-km="18,0" data-ascent="890" data-rating="5" data-company="partička" data-note="Po hřebeni od Petrovky. Poslední letošní túra bez bundy."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Vysoké kolo</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-09-05" class="text-nowrap">5. 9. 2026</td>
+              <td class="fw-semibold">Ostrý</td>
+              <td>Šumava</td>
+              <td class="text-end" data-order="1293">1 293</td>
+              <td class="text-end" data-order="13.4">13,4</td>
+              <td class="text-end" data-order="700">700</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Ostrý" data-date="5. 9. 2026" data-range="Šumava" data-height="1 293" data-start="Železná Ruda"
+                data-km="13,4" data-ascent="700" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Ostrý</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-08-22" class="text-nowrap">22. 8. 2026</td>
+              <td class="fw-semibold">Velký Máj</td>
+              <td>Hrubý Jeseník</td>
+              <td class="text-end" data-order="1385">1 385</td>
+              <td class="text-end" data-order="12.9">12,9</td>
+              <td class="text-end" data-order="640">640</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Velký Máj" data-date="22. 8. 2026" data-range="Hrubý Jeseník" data-height="1 385" data-start="Ramzová"
+                data-km="12,9" data-ascent="640" data-rating="4" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Velký Máj</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-08-08" class="text-nowrap">8. 8. 2026</td>
+              <td class="fw-semibold">Javorový vrch</td>
+              <td>Beskydy</td>
+              <td class="text-end" data-order="1032">1 032</td>
+              <td class="text-end" data-order="11.6">11,6</td>
+              <td class="text-end" data-order="720">720</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Javorový vrch" data-date="8. 8. 2026" data-range="Beskydy" data-height="1 032" data-start="Třinec"
+                data-km="11,6" data-ascent="720" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Javorový vrch</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-07-25" class="text-nowrap">25. 7. 2026</td>
+              <td class="fw-semibold">Zlaté návrší</td>
+              <td>Krkonoše</td>
+              <td class="text-end" data-order="1411">1 411</td>
+              <td class="text-end" data-order="10.3">10,3</td>
+              <td class="text-end" data-order="380">380</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Zlaté návrší" data-date="25. 7. 2026" data-range="Krkonoše" data-height="1 411" data-start="Horní Mísečky"
+                data-km="10,3" data-ascent="380" data-rating="4" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Zlaté návrší</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-07-11" class="text-nowrap">11. 7. 2026</td>
+              <td class="fw-semibold">Trojmezná</td>
+              <td>Šumava</td>
+              <td class="text-end" data-order="1361">1 361</td>
+              <td class="text-end" data-order="21">21,0</td>
+              <td class="text-end" data-order="760">760</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Trojmezná" data-date="11. 7. 2026" data-range="Šumava" data-height="1 361" data-start="Nová Pec"
+                data-km="21,0" data-ascent="760" data-rating="4" data-company="partička" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Trojmezná</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-06-14" class="text-nowrap">14. 6. 2026</td>
+              <td class="fw-semibold">Červená hora</td>
+              <td>Hrubý Jeseník</td>
+              <td class="text-end" data-order="1333">1 333</td>
+              <td class="text-end" data-order="7.2">7,2</td>
+              <td class="text-end" data-order="330">330</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Červená hora" data-date="14. 6. 2026" data-range="Hrubý Jeseník" data-height="1 333" data-start="Červenohorské sedlo"
+                data-km="7,2" data-ascent="330" data-rating="3" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Červená hora</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-06-13" class="text-nowrap">13. 6. 2026</td>
+              <td class="fw-semibold">Dlouhé stráně</td>
+              <td>Hrubý Jeseník</td>
+              <td class="text-end" data-order="1354">1 354</td>
+              <td class="text-end" data-order="13">13,0</td>
+              <td class="text-end" data-order="770">770</td>
+              <td data-order="5"><span class="stars" aria-label="5 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Dlouhé stráně" data-date="13. 6. 2026" data-range="Hrubý Jeseník" data-height="1 354" data-start="Kouty nad Desnou"
+                data-km="13,0" data-ascent="770" data-rating="5" data-company="ve dvou" data-note="Horní nádrž přečerpávací elektrárny. Výhled do půlky Jeseníků."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Dlouhé stráně</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-05-30" class="text-nowrap">30. 5. 2026</td>
+              <td class="fw-semibold">Churáňov</td>
+              <td>Šumava</td>
+              <td class="text-end" data-order="1122">1 122</td>
+              <td class="text-end" data-order="5.6">5,6</td>
+              <td class="text-end" data-order="200">200</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Churáňov" data-date="30. 5. 2026" data-range="Šumava" data-height="1 122" data-start="Zadov"
+                data-km="5,6" data-ascent="200" data-rating="3" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Churáňov</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-05-02" class="text-nowrap">2. 5. 2026</td>
+              <td class="fw-semibold">Černá studnice</td>
+              <td>Jizerské hory</td>
+              <td class="text-end" data-order="869">869</td>
+              <td class="text-end" data-order="12">12,0</td>
+              <td class="text-end" data-order="420">420</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Černá studnice" data-date="2. 5. 2026" data-range="Jizerské hory" data-height="869" data-start="Jablonec nad Nisou"
+                data-km="12,0" data-ascent="420" data-rating="3" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Černá studnice</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-04-11" class="text-nowrap">11. 4. 2026</td>
+              <td class="fw-semibold">Tanvaldský Špičák</td>
+              <td>Jizerské hory</td>
+              <td class="text-end" data-order="831">831</td>
+              <td class="text-end" data-order="7.1">7,1</td>
+              <td class="text-end" data-order="280">280</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Tanvaldský Špičák" data-date="11. 4. 2026" data-range="Jizerské hory" data-height="831" data-start="Albrechtice v Jizerských horách"
+                data-km="7,1" data-ascent="280" data-rating="3" data-company="partička" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Tanvaldský Špičák</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-03-14" class="text-nowrap">14. 3. 2026</td>
+              <td class="fw-semibold">Klíč</td>
+              <td>Lužické hory</td>
+              <td class="text-end" data-order="759">759</td>
+              <td class="text-end" data-order="6.8">6,8</td>
+              <td class="text-end" data-order="330">330</td>
+              <td data-order="5"><span class="stars" aria-label="5 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Klíč" data-date="14. 3. 2026" data-range="Lužické hory" data-height="759" data-start="Svor"
+                data-km="6,8" data-ascent="330" data-rating="5" data-company="sám" data-note="Suťové pole nahoře a výhled na celé Lužické hory."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Klíč</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-02-22" class="text-nowrap">22. 2. 2026</td>
+              <td class="fw-semibold">Špičák</td>
+              <td>Šumava</td>
+              <td class="text-end" data-order="1202">1 202</td>
+              <td class="text-end" data-order="8.3">8,3</td>
+              <td class="text-end" data-order="420">420</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Špičák" data-date="22. 2. 2026" data-range="Šumava" data-height="1 202" data-start="Železná Ruda"
+                data-km="8,3" data-ascent="420" data-rating="3" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Špičák</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-02-21" class="text-nowrap">21. 2. 2026</td>
+              <td class="fw-semibold">Pancíř</td>
+              <td>Šumava</td>
+              <td class="text-end" data-order="1214">1 214</td>
+              <td class="text-end" data-order="7">7,0</td>
+              <td class="text-end" data-order="330">330</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Pancíř" data-date="21. 2. 2026" data-range="Šumava" data-height="1 214" data-start="Špičák"
+                data-km="7,0" data-ascent="330" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Pancíř</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2026-01-24" class="text-nowrap">24. 1. 2026</td>
+              <td class="fw-semibold">Medvědín</td>
+              <td>Krkonoše</td>
+              <td class="text-end" data-order="1235">1 235</td>
+              <td class="text-end" data-order="7.4">7,4</td>
+              <td class="text-end" data-order="480">480</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Medvědín" data-date="24. 1. 2026" data-range="Krkonoše" data-height="1 235" data-start="Špindlerův Mlýn"
+                data-km="7,4" data-ascent="480" data-rating="3" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Medvědín</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-12-27" class="text-nowrap">27. 12. 2025</td>
+              <td class="fw-semibold">Žalý</td>
+              <td>Krkonoše</td>
+              <td class="text-end" data-order="1036">1 036</td>
+              <td class="text-end" data-order="6.1">6,1</td>
+              <td class="text-end" data-order="240">240</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Žalý" data-date="27. 12. 2025" data-range="Krkonoše" data-height="1 036" data-start="Benecko"
+                data-km="6,1" data-ascent="240" data-rating="3" data-company="partička" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Žalý</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-11-22" class="text-nowrap">22. 11. 2025</td>
+              <td class="fw-semibold">Radobýl</td>
+              <td>České středohoří</td>
+              <td class="text-end" data-order="399">399</td>
+              <td class="text-end" data-order="5.2">5,2</td>
+              <td class="text-end" data-order="210">210</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Radobýl" data-date="22. 11. 2025" data-range="České středohoří" data-height="399" data-start="Litoměřice"
+                data-km="5,2" data-ascent="210" data-rating="3" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Radobýl</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-11-08" class="text-nowrap">8. 11. 2025</td>
+              <td class="fw-semibold">Sedlo</td>
+              <td>České středohoří</td>
+              <td class="text-end" data-order="726">726</td>
+              <td class="text-end" data-order="6.6">6,6</td>
+              <td class="text-end" data-order="350">350</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Sedlo" data-date="8. 11. 2025" data-range="České středohoří" data-height="726" data-start="Třebušín"
+                data-km="6,6" data-ascent="350" data-rating="4" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Sedlo</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-10-25" class="text-nowrap">25. 10. 2025</td>
+              <td class="fw-semibold">Zvičina</td>
+              <td>Podkrkonoší</td>
+              <td class="text-end" data-order="671">671</td>
+              <td class="text-end" data-order="13.5">13,5</td>
+              <td class="text-end" data-order="390">390</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Zvičina" data-date="25. 10. 2025" data-range="Podkrkonoší" data-height="671" data-start="Dvůr Králové nad Labem"
+                data-km="13,5" data-ascent="390" data-rating="3" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Zvičina</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-10-11" class="text-nowrap">11. 10. 2025</td>
+              <td class="fw-semibold">Komáří vížka</td>
+              <td>Krušné hory</td>
+              <td class="text-end" data-order="808">808</td>
+              <td class="text-end" data-order="6.4">6,4</td>
+              <td class="text-end" data-order="500">500</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Komáří vížka" data-date="11. 10. 2025" data-range="Krušné hory" data-height="808" data-start="Krupka"
+                data-km="6,4" data-ascent="500" data-rating="4" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Komáří vížka</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-09-27" class="text-nowrap">27. 9. 2025</td>
+              <td class="fw-semibold">Bouřňák</td>
+              <td>Krušné hory</td>
+              <td class="text-end" data-order="869">869</td>
+              <td class="text-end" data-order="7.3">7,3</td>
+              <td class="text-end" data-order="220">220</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Bouřňák" data-date="27. 9. 2025" data-range="Krušné hory" data-height="869" data-start="Mikulov"
+                data-km="7,3" data-ascent="220" data-rating="3" data-company="partička" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Bouřňák</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-09-14" class="text-nowrap">14. 9. 2025</td>
+              <td class="fw-semibold">Bukovec</td>
+              <td>Jizerské hory</td>
+              <td class="text-end" data-order="1005">1 005</td>
+              <td class="text-end" data-order="3.9">3,9</td>
+              <td class="text-end" data-order="160">160</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Bukovec" data-date="14. 9. 2025" data-range="Jizerské hory" data-height="1 005" data-start="Jizerka"
+                data-km="3,9" data-ascent="160" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Bukovec</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-09-13" class="text-nowrap">13. 9. 2025</td>
+              <td class="fw-semibold">Jizera</td>
+              <td>Jizerské hory</td>
+              <td class="text-end" data-order="1122">1 122</td>
+              <td class="text-end" data-order="8.8">8,8</td>
+              <td class="text-end" data-order="300">300</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Jizera" data-date="13. 9. 2025" data-range="Jizerské hory" data-height="1 122" data-start="Smědava"
+                data-km="8,8" data-ascent="300" data-rating="4" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Jizera</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-08-30" class="text-nowrap">30. 8. 2025</td>
+              <td class="fw-semibold">Travný</td>
+              <td>Beskydy</td>
+              <td class="text-end" data-order="1203">1 203</td>
+              <td class="text-end" data-order="12.4">12,4</td>
+              <td class="text-end" data-order="780">780</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Travný" data-date="30. 8. 2025" data-range="Beskydy" data-height="1 203" data-start="Krásná"
+                data-km="12,4" data-ascent="780" data-rating="3" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Travný</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-08-17" class="text-nowrap">17. 8. 2025</td>
+              <td class="fw-semibold">Kněhyně</td>
+              <td>Beskydy</td>
+              <td class="text-end" data-order="1257">1 257</td>
+              <td class="text-end" data-order="9.1">9,1</td>
+              <td class="text-end" data-order="330">330</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Kněhyně" data-date="17. 8. 2025" data-range="Beskydy" data-height="1 257" data-start="Pustevny"
+                data-km="9,1" data-ascent="330" data-rating="4" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Kněhyně</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-08-16" class="text-nowrap">16. 8. 2025</td>
+              <td class="fw-semibold">Smrk</td>
+              <td>Beskydy</td>
+              <td class="text-end" data-order="1276">1 276</td>
+              <td class="text-end" data-order="14.7">14,7</td>
+              <td class="text-end" data-order="880">880</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Smrk" data-date="16. 8. 2025" data-range="Beskydy" data-height="1 276" data-start="Čeladná"
+                data-km="14,7" data-ascent="880" data-rating="4" data-company="partička" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Smrk</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-08-03" class="text-nowrap">3. 8. 2025</td>
+              <td class="fw-semibold">Poledník</td>
+              <td>Šumava</td>
+              <td class="text-end" data-order="1315">1 315</td>
+              <td class="text-end" data-order="16">16,0</td>
+              <td class="text-end" data-order="580">580</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Poledník" data-date="3. 8. 2025" data-range="Šumava" data-height="1 315" data-start="Prášily"
+                data-km="16,0" data-ascent="580" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Poledník</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-08-02" class="text-nowrap">2. 8. 2025</td>
+              <td class="fw-semibold">Luzný</td>
+              <td>Šumava</td>
+              <td class="text-end" data-order="1373">1 373</td>
+              <td class="text-end" data-order="22.3">22,3</td>
+              <td class="text-end" data-order="590">590</td>
+              <td data-order="5"><span class="stars" aria-label="5 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Luzný" data-date="2. 8. 2025" data-range="Šumava" data-height="1 373" data-start="Modrava"
+                data-km="22,3" data-ascent="590" data-rating="5" data-company="ve dvou" data-note="Přes Březník. Cesta na vrchol je otevřená jen v sezóně."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Luzný</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-07-20" class="text-nowrap">20. 7. 2025</td>
+              <td class="fw-semibold">Kotel</td>
+              <td>Krkonoše</td>
+              <td class="text-end" data-order="1435">1 435</td>
+              <td class="text-end" data-order="14.9">14,9</td>
+              <td class="text-end" data-order="830">830</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Kotel" data-date="20. 7. 2025" data-range="Krkonoše" data-height="1 435" data-start="Rokytnice nad Jizerou"
+                data-km="14,9" data-ascent="830" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Kotel</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-07-19" class="text-nowrap">19. 7. 2025</td>
+              <td class="fw-semibold">Studniční hora</td>
+              <td>Krkonoše</td>
+              <td class="text-end" data-order="1554">1 554</td>
+              <td class="text-end" data-order="18.4">18,4</td>
+              <td class="text-end" data-order="950">950</td>
+              <td data-order="5"><span class="stars" aria-label="5 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Studniční hora" data-date="19. 7. 2025" data-range="Krkonoše" data-height="1 554" data-start="Pec pod Sněžkou"
+                data-km="18,4" data-ascent="950" data-rating="5" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Studniční hora</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-07-06" class="text-nowrap">6. 7. 2025</td>
+              <td class="fw-semibold">Petrovy kameny</td>
+              <td>Hrubý Jeseník</td>
+              <td class="text-end" data-order="1446">1 446</td>
+              <td class="text-end" data-order="3.2">3,2</td>
+              <td class="text-end" data-order="120">120</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Petrovy kameny" data-date="6. 7. 2025" data-range="Hrubý Jeseník" data-height="1 446" data-start="Ovčárna"
+                data-km="3,2" data-ascent="120" data-rating="3" data-company="partička" data-note="Jen okolo, na samotné skály je vstup zakázaný."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Petrovy kameny</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-07-05" class="text-nowrap">5. 7. 2025</td>
+              <td class="fw-semibold">Vysoká hole</td>
+              <td>Hrubý Jeseník</td>
+              <td class="text-end" data-order="1464">1 464</td>
+              <td class="text-end" data-order="17.8">17,8</td>
+              <td class="text-end" data-order="800">800</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Vysoká hole" data-date="5. 7. 2025" data-range="Hrubý Jeseník" data-height="1 464" data-start="Karlova Studánka"
+                data-km="17,8" data-ascent="800" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Vysoká hole</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-06-15" class="text-nowrap">15. 6. 2025</td>
+              <td class="fw-semibold">Králický Sněžník</td>
+              <td>Králický Sněžník</td>
+              <td class="text-end" data-order="1424">1 424</td>
+              <td class="text-end" data-order="20.1">20,1</td>
+              <td class="text-end" data-order="900">900</td>
+              <td data-order="5"><span class="stars" aria-label="5 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Králický Sněžník" data-date="15. 6. 2025" data-range="Králický Sněžník" data-height="1 424" data-start="Stříbrnice"
+                data-km="20,1" data-ascent="900" data-rating="5" data-company="ve dvou" data-note="Cestou nahoru pramen Moravy. Kamenný slon na vrcholu je pořád na svém místě."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Králický Sněžník</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-06-14" class="text-nowrap">14. 6. 2025</td>
+              <td class="fw-semibold">Šerák</td>
+              <td>Hrubý Jeseník</td>
+              <td class="text-end" data-order="1351">1 351</td>
+              <td class="text-end" data-order="9.4">9,4</td>
+              <td class="text-end" data-order="590">590</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Šerák" data-date="14. 6. 2025" data-range="Hrubý Jeseník" data-height="1 351" data-start="Ramzová"
+                data-km="9,4" data-ascent="590" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Šerák</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-05-25" class="text-nowrap">25. 5. 2025</td>
+              <td class="fw-semibold">Devět skal</td>
+              <td>Vysočina</td>
+              <td class="text-end" data-order="836">836</td>
+              <td class="text-end" data-order="7.9">7,9</td>
+              <td class="text-end" data-order="260">260</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Devět skal" data-date="25. 5. 2025" data-range="Vysočina" data-height="836" data-start="Křižánky"
+                data-km="7,9" data-ascent="260" data-rating="4" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Devět skal</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-05-24" class="text-nowrap">24. 5. 2025</td>
+              <td class="fw-semibold">Javořice</td>
+              <td>Vysočina</td>
+              <td class="text-end" data-order="837">837</td>
+              <td class="text-end" data-order="11.2">11,2</td>
+              <td class="text-end" data-order="300">300</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Javořice" data-date="24. 5. 2025" data-range="Vysočina" data-height="837" data-start="Mrákotín"
+                data-km="11,2" data-ascent="300" data-rating="3" data-company="partička" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Javořice</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-05-10" class="text-nowrap">10. 5. 2025</td>
+              <td class="fw-semibold">Hostýn</td>
+              <td>Hostýnské vrchy</td>
+              <td class="text-end" data-order="735">735</td>
+              <td class="text-end" data-order="8.7">8,7</td>
+              <td class="text-end" data-order="400">400</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Hostýn" data-date="10. 5. 2025" data-range="Hostýnské vrchy" data-height="735" data-start="Bystřice pod Hostýnem"
+                data-km="8,7" data-ascent="400" data-rating="3" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Hostýn</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-04-26" class="text-nowrap">26. 4. 2025</td>
+              <td class="fw-semibold">Velká Javořina</td>
+              <td>Bílé Karpaty</td>
+              <td class="text-end" data-order="970">970</td>
+              <td class="text-end" data-order="15.6">15,6</td>
+              <td class="text-end" data-order="620">620</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Velká Javořina" data-date="26. 4. 2025" data-range="Bílé Karpaty" data-height="970" data-start="Strání"
+                data-km="15,6" data-ascent="620" data-rating="4" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Velká Javořina</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-04-05" class="text-nowrap">5. 4. 2025</td>
+              <td class="fw-semibold">Děvín</td>
+              <td>Pálava</td>
+              <td class="text-end" data-order="550">550</td>
+              <td class="text-end" data-order="9.8">9,8</td>
+              <td class="text-end" data-order="400">400</td>
+              <td data-order="5"><span class="stars" aria-label="5 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Děvín" data-date="5. 4. 2025" data-range="Pálava" data-height="550" data-start="Pavlov"
+                data-km="9,8" data-ascent="400" data-rating="5" data-company="sám" data-note="Začátek dubna, kdy na stráních kvetou koniklece."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Děvín</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-03-22" class="text-nowrap">22. 3. 2025</td>
+              <td class="fw-semibold">Růžovský vrch</td>
+              <td>Děčínská vysočina</td>
+              <td class="text-end" data-order="619">619</td>
+              <td class="text-end" data-order="7.7">7,7</td>
+              <td class="text-end" data-order="300">300</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Růžovský vrch" data-date="22. 3. 2025" data-range="Děčínská vysočina" data-height="619" data-start="Růžová"
+                data-km="7,7" data-ascent="300" data-rating="3" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Růžovský vrch</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-03-08" class="text-nowrap">8. 3. 2025</td>
+              <td class="fw-semibold">Děčínský Sněžník</td>
+              <td>Děčínská vysočina</td>
+              <td class="text-end" data-order="723">723</td>
+              <td class="text-end" data-order="5.9">5,9</td>
+              <td class="text-end" data-order="180">180</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Děčínský Sněžník" data-date="8. 3. 2025" data-range="Děčínská vysočina" data-height="723" data-start="Sněžník"
+                data-km="5,9" data-ascent="180" data-rating="3" data-company="partička" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Děčínský Sněžník</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-02-15" class="text-nowrap">15. 2. 2025</td>
+              <td class="fw-semibold">Luž</td>
+              <td>Lužické hory</td>
+              <td class="text-end" data-order="793">793</td>
+              <td class="text-end" data-order="5.5">5,5</td>
+              <td class="text-end" data-order="240">240</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Luž" data-date="15. 2. 2025" data-range="Lužické hory" data-height="793" data-start="Horní Světlá"
+                data-km="5,5" data-ascent="240" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Luž</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2025-01-18" class="text-nowrap">18. 1. 2025</td>
+              <td class="fw-semibold">Černá hora</td>
+              <td>Krkonoše</td>
+              <td class="text-end" data-order="1299">1 299</td>
+              <td class="text-end" data-order="10.8">10,8</td>
+              <td class="text-end" data-order="640">640</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Černá hora" data-date="18. 1. 2025" data-range="Krkonoše" data-height="1 299" data-start="Janské Lázně"
+                data-km="10,8" data-ascent="640" data-rating="3" data-company="ve dvou" data-note="Poprvé na sněžnicích. Asi ne naposledy."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Černá hora</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-12-28" class="text-nowrap">28. 12. 2024</td>
+              <td class="fw-semibold">Jedlová</td>
+              <td>Lužické hory</td>
+              <td class="text-end" data-order="774">774</td>
+              <td class="text-end" data-order="8.1">8,1</td>
+              <td class="text-end" data-order="330">330</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Jedlová" data-date="28. 12. 2024" data-range="Lužické hory" data-height="774" data-start="Jiřetín pod Jedlovou"
+                data-km="8,1" data-ascent="330" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Jedlová</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-12-07" class="text-nowrap">7. 12. 2024</td>
+              <td class="fw-semibold">Kleť</td>
+              <td>Blanský les</td>
+              <td class="text-end" data-order="1084">1 084</td>
+              <td class="text-end" data-order="13.3">13,3</td>
+              <td class="text-end" data-order="620">620</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Kleť" data-date="7. 12. 2024" data-range="Blanský les" data-height="1 084" data-start="Holubov"
+                data-km="13,3" data-ascent="620" data-rating="4" data-company="ve dvou" data-note="Kamenná rozhledna z roku 1825 a výhled na Alpy, když má člověk štěstí. Já ho neměl."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Kleť</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-11-23" class="text-nowrap">23. 11. 2024</td>
+              <td class="fw-semibold">Oblík</td>
+              <td>České středohoří</td>
+              <td class="text-end" data-order="509">509</td>
+              <td class="text-end" data-order="6">6,0</td>
+              <td class="text-end" data-order="250">250</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Oblík" data-date="23. 11. 2024" data-range="České středohoří" data-height="509" data-start="Raná"
+                data-km="6,0" data-ascent="250" data-rating="4" data-company="partička" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Oblík</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-11-09" class="text-nowrap">9. 11. 2024</td>
+              <td class="fw-semibold">Blaník</td>
+              <td>Vlašimská pahorkatina</td>
+              <td class="text-end" data-order="638">638</td>
+              <td class="text-end" data-order="7.4">7,4</td>
+              <td class="text-end" data-order="230">230</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Blaník" data-date="9. 11. 2024" data-range="Vlašimská pahorkatina" data-height="638" data-start="Louňovice pod Blaníkem"
+                data-km="7,4" data-ascent="230" data-rating="3" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Blaník</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-10-26" class="text-nowrap">26. 10. 2024</td>
+              <td class="fw-semibold">Třemšín</td>
+              <td>Brdy</td>
+              <td class="text-end" data-order="827">827</td>
+              <td class="text-end" data-order="10.2">10,2</td>
+              <td class="text-end" data-order="360">360</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Třemšín" data-date="26. 10. 2024" data-range="Brdy" data-height="827" data-start="Rožmitál pod Třemšínem"
+                data-km="10,2" data-ascent="360" data-rating="4" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Třemšín</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-10-19" class="text-nowrap">19. 10. 2024</td>
+              <td class="fw-semibold">Tok</td>
+              <td>Brdy</td>
+              <td class="text-end" data-order="865">865</td>
+              <td class="text-end" data-order="14">14,0</td>
+              <td class="text-end" data-order="380">380</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Tok" data-date="19. 10. 2024" data-range="Brdy" data-height="865" data-start="Láz"
+                data-km="14,0" data-ascent="380" data-rating="3" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Tok</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-10-05" class="text-nowrap">5. 10. 2024</td>
+              <td class="fw-semibold">Smrk</td>
+              <td>Jizerské hory</td>
+              <td class="text-end" data-order="1124">1 124</td>
+              <td class="text-end" data-order="12.9">12,9</td>
+              <td class="text-end" data-order="690">690</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Smrk" data-date="5. 10. 2024" data-range="Jizerské hory" data-height="1 124" data-start="Nové Město pod Smrkem"
+                data-km="12,9" data-ascent="690" data-rating="4" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Smrk</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-09-22" class="text-nowrap">22. 9. 2024</td>
+              <td class="fw-semibold">Šerlich</td>
+              <td>Orlické hory</td>
+              <td class="text-end" data-order="1027">1 027</td>
+              <td class="text-end" data-order="12.1">12,1</td>
+              <td class="text-end" data-order="480">480</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Šerlich" data-date="22. 9. 2024" data-range="Orlické hory" data-height="1 027" data-start="Deštné v Orlických horách"
+                data-km="12,1" data-ascent="480" data-rating="3" data-company="partička" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Šerlich</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-09-21" class="text-nowrap">21. 9. 2024</td>
+              <td class="fw-semibold">Velká Deštná</td>
+              <td>Orlické hory</td>
+              <td class="text-end" data-order="1115">1 115</td>
+              <td class="text-end" data-order="13.7">13,7</td>
+              <td class="text-end" data-order="560">560</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Velká Deštná" data-date="21. 9. 2024" data-range="Orlické hory" data-height="1 115" data-start="Deštné v Orlických horách"
+                data-km="13,7" data-ascent="560" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Velká Deštná</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-09-08" class="text-nowrap">8. 9. 2024</td>
+              <td class="fw-semibold">Božídarský Špičák</td>
+              <td>Krušné hory</td>
+              <td class="text-end" data-order="1115">1 115</td>
+              <td class="text-end" data-order="5.8">5,8</td>
+              <td class="text-end" data-order="150">150</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Božídarský Špičák" data-date="8. 9. 2024" data-range="Krušné hory" data-height="1 115" data-start="Boží Dar"
+                data-km="5,8" data-ascent="150" data-rating="3" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Božídarský Špičák</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-09-07" class="text-nowrap">7. 9. 2024</td>
+              <td class="fw-semibold">Klínovec</td>
+              <td>Krušné hory</td>
+              <td class="text-end" data-order="1244">1 244</td>
+              <td class="text-end" data-order="9.6">9,6</td>
+              <td class="text-end" data-order="470">470</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Klínovec" data-date="7. 9. 2024" data-range="Krušné hory" data-height="1 244" data-start="Loučná pod Klínovcem"
+                data-km="9,6" data-ascent="470" data-rating="3" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Klínovec</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-08-25" class="text-nowrap">25. 8. 2024</td>
+              <td class="fw-semibold">Radhošť</td>
+              <td>Beskydy</td>
+              <td class="text-end" data-order="1129">1 129</td>
+              <td class="text-end" data-order="8">8,0</td>
+              <td class="text-end" data-order="240">240</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Radhošť" data-date="25. 8. 2024" data-range="Beskydy" data-height="1 129" data-start="Pustevny"
+                data-km="8,0" data-ascent="240" data-rating="3" data-company="ve dvou" data-note="Z Pusteven po hřebeni, tedy spíš procházka."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Radhošť</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-08-24" class="text-nowrap">24. 8. 2024</td>
+              <td class="fw-semibold">Lysá hora</td>
+              <td>Beskydy</td>
+              <td class="text-end" data-order="1323">1 323</td>
+              <td class="text-end" data-order="15.3">15,3</td>
+              <td class="text-end" data-order="930">930</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Lysá hora" data-date="24. 8. 2024" data-range="Beskydy" data-height="1 323" data-start="Ostravice"
+                data-km="15,3" data-ascent="930" data-rating="4" data-company="partička" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Lysá hora</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-08-04" class="text-nowrap">4. 8. 2024</td>
+              <td class="fw-semibold">Boubín</td>
+              <td>Šumava</td>
+              <td class="text-end" data-order="1362">1 362</td>
+              <td class="text-end" data-order="11">11,0</td>
+              <td class="text-end" data-order="420">420</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Boubín" data-date="4. 8. 2024" data-range="Šumava" data-height="1 362" data-start="Kubova Huť"
+                data-km="11,0" data-ascent="420" data-rating="4" data-company="sám" data-note="Dřevěná rozhledna na vrcholu, v srpnu plná."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Boubín</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-08-03" class="text-nowrap">3. 8. 2024</td>
+              <td class="fw-semibold">Plechý</td>
+              <td>Šumava</td>
+              <td class="text-end" data-order="1378">1 378</td>
+              <td class="text-end" data-order="19.4">19,4</td>
+              <td class="text-end" data-order="690">690</td>
+              <td data-order="5"><span class="stars" aria-label="5 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Plechý" data-date="3. 8. 2024" data-range="Šumava" data-height="1 378" data-start="Nová Pec"
+                data-km="19,4" data-ascent="690" data-rating="5" data-company="ve dvou" data-note="Kolem Plešného jezera a Stifterova památníku."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Plechý</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-07-14" class="text-nowrap">14. 7. 2024</td>
+              <td class="fw-semibold">Keprník</td>
+              <td>Hrubý Jeseník</td>
+              <td class="text-end" data-order="1423">1 423</td>
+              <td class="text-end" data-order="12.5">12,5</td>
+              <td class="text-end" data-order="480">480</td>
+              <td data-order="5"><span class="stars" aria-label="5 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Keprník" data-date="14. 7. 2024" data-range="Hrubý Jeseník" data-height="1 423" data-start="Červenohorské sedlo"
+                data-km="12,5" data-ascent="480" data-rating="5" data-company="sám" data-note="Vřesoviště a skalky na vrcholu. Za mě hezčí než Praděd."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Keprník</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-07-13" class="text-nowrap">13. 7. 2024</td>
+              <td class="fw-semibold">Praděd</td>
+              <td>Hrubý Jeseník</td>
+              <td class="text-end" data-order="1491">1 491</td>
+              <td class="text-end" data-order="16.9">16,9</td>
+              <td class="text-end" data-order="760">760</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Praděd" data-date="13. 7. 2024" data-range="Hrubý Jeseník" data-height="1 491" data-start="Karlova Studánka"
+                data-km="16,9" data-ascent="760" data-rating="4" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Praděd</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-06-23" class="text-nowrap">23. 6. 2024</td>
+              <td class="fw-semibold">Sněžka</td>
+              <td>Krkonoše</td>
+              <td class="text-end" data-order="1603">1 603</td>
+              <td class="text-end" data-order="14.2">14,2</td>
+              <td class="text-end" data-order="800">800</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Sněžka" data-date="23. 6. 2024" data-range="Krkonoše" data-height="1 603" data-start="Pec pod Sněžkou"
+                data-km="14,2" data-ascent="800" data-rating="4" data-company="partička" data-note="Obřím dolem nahoru, přes Růžovou horu dolů. Na vrcholu fronta na razítko."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Sněžka</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-06-22" class="text-nowrap">22. 6. 2024</td>
+              <td class="fw-semibold">Luční hora</td>
+              <td>Krkonoše</td>
+              <td class="text-end" data-order="1555">1 555</td>
+              <td class="text-end" data-order="21.6">21,6</td>
+              <td class="text-end" data-order="1010">1 010</td>
+              <td data-order="5"><span class="stars" aria-label="5 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Luční hora" data-date="22. 6. 2024" data-range="Krkonoše" data-height="1 555" data-start="Špindlerův Mlýn"
+                data-km="21,6" data-ascent="1 010" data-rating="5" data-company="sám" data-note="První opravdu dlouhá túra. Druhý den jsem sotva chodil."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Luční hora</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-06-08" class="text-nowrap">8. 6. 2024</td>
+              <td class="fw-semibold">Kozákov</td>
+              <td>Podkrkonoší</td>
+              <td class="text-end" data-order="744">744</td>
+              <td class="text-end" data-order="10.4">10,4</td>
+              <td class="text-end" data-order="380">380</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Kozákov" data-date="8. 6. 2024" data-range="Podkrkonoší" data-height="744" data-start="Chuchelna"
+                data-km="10,4" data-ascent="380" data-rating="3" data-company="ve dvou" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Kozákov</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-05-25" class="text-nowrap">25. 5. 2024</td>
+              <td class="fw-semibold">Bezděz</td>
+              <td>Ralská pahorkatina</td>
+              <td class="text-end" data-order="604">604</td>
+              <td class="text-end" data-order="6.3">6,3</td>
+              <td class="text-end" data-order="290">290</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Bezděz" data-date="25. 5. 2024" data-range="Ralská pahorkatina" data-height="604" data-start="Bezděz"
+                data-km="6,3" data-ascent="290" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Bezděz</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-05-11" class="text-nowrap">11. 5. 2024</td>
+              <td class="fw-semibold">Ještěd</td>
+              <td>Ještědský hřbet</td>
+              <td class="text-end" data-order="1012">1 012</td>
+              <td class="text-end" data-order="11.8">11,8</td>
+              <td class="text-end" data-order="610">610</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Ještěd" data-date="11. 5. 2024" data-range="Ještědský hřbet" data-height="1 012" data-start="Horní Hanychov"
+                data-km="11,8" data-ascent="610" data-rating="4" data-company="ve dvou" data-note="Plán byl nahoru pěšky a dolů lanovkou. Lanovka stála, takže dolů taky pěšky."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Ještěd</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-05-01" class="text-nowrap">1. 5. 2024</td>
+              <td class="fw-semibold">Hazmburk</td>
+              <td>České středohoří</td>
+              <td class="text-end" data-order="418">418</td>
+              <td class="text-end" data-order="5.1">5,1</td>
+              <td class="text-end" data-order="230">230</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Hazmburk" data-date="1. 5. 2024" data-range="České středohoří" data-height="418" data-start="Klapý"
+                data-km="5,1" data-ascent="230" data-rating="3" data-company="partička" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Hazmburk</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-04-20" class="text-nowrap">20. 4. 2024</td>
+              <td class="fw-semibold">Lovoš</td>
+              <td>České středohoří</td>
+              <td class="text-end" data-order="570">570</td>
+              <td class="text-end" data-order="8.4">8,4</td>
+              <td class="text-end" data-order="420">420</td>
+              <td data-order="4"><span class="stars" aria-label="4 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Lovoš" data-date="20. 4. 2024" data-range="České středohoří" data-height="570" data-start="Lovosice"
+                data-km="8,4" data-ascent="420" data-rating="4" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Lovoš</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-04-06" class="text-nowrap">6. 4. 2024</td>
+              <td class="fw-semibold">Milešovka</td>
+              <td>České středohoří</td>
+              <td class="text-end" data-order="837">837</td>
+              <td class="text-end" data-order="9.2">9,2</td>
+              <td class="text-end" data-order="480">480</td>
+              <td data-order="5"><span class="stars" aria-label="5 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Milešovka" data-date="6. 4. 2024" data-range="České středohoří" data-height="837" data-start="Milešov"
+                data-km="9,2" data-ascent="480" data-rating="5" data-company="ve dvou" data-note="Nahoře fouká vždycky. Meteorologická stanice tam stojí od roku 1905 a je to na ní znát."><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Milešovka</span></button></td>
+            </tr>
+            <tr>
+              <td data-order="2024-03-16" class="text-nowrap">16. 3. 2024</td>
+              <td class="fw-semibold">Říp</td>
+              <td>Podřipsko</td>
+              <td class="text-end" data-order="456">456</td>
+              <td class="text-end" data-order="7.5">7,5</td>
+              <td class="text-end" data-order="220">220</td>
+              <td data-order="3"><span class="stars" aria-label="3 z 5"><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star-fill" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i><i class="bi bi-star" aria-hidden="true"></i></span></td>
+              <td class="text-end"><button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#hikeModal"
+                data-peak="Říp" data-date="16. 3. 2024" data-range="Podřipsko" data-height="456" data-start="Krabčice"
+                data-km="7,5" data-ascent="220" data-rating="3" data-company="sám" data-note=""><i class="bi bi-info-circle" aria-hidden="true"></i><span class="visually-hidden">Detail túry Říp</span></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="modal fade" id="hikeModal" tabindex="-1" aria-labelledby="hikeModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="hikeModalTitle">Detail túry</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+          </div>
+          <div class="modal-body">
+            <dl class="row mb-0">
+              <dt class="col-5 fw-normal text-body-secondary">Datum</dt><dd class="col-7" data-field="date"></dd>
+              <dt class="col-5 fw-normal text-body-secondary">Pohoří</dt><dd class="col-7" data-field="range"></dd>
+              <dt class="col-5 fw-normal text-body-secondary">Nadmořská výška</dt><dd class="col-7"><span data-field="height"></span> m</dd>
+              <dt class="col-5 fw-normal text-body-secondary">Výchozí bod</dt><dd class="col-7" data-field="start"></dd>
+              <dt class="col-5 fw-normal text-body-secondary">Délka trasy</dt><dd class="col-7"><span data-field="km"></span> km</dd>
+              <dt class="col-5 fw-normal text-body-secondary">Převýšení</dt><dd class="col-7"><span data-field="ascent"></span> m</dd>
+              <dt class="col-5 fw-normal text-body-secondary">S kým</dt><dd class="col-7" data-field="company"></dd>
+              <dt class="col-5 fw-normal text-body-secondary">Hodnocení</dt><dd class="col-7" data-field="rating"></dd>
+            </dl>
+            <p class="border-top pt-3 mt-2 mb-0" data-field="note"></p>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-outline-primary" data-field="map" href="https://mapy.cz" target="_blank" rel="noopener"><i class="bi bi-map me-1" aria-hidden="true"></i> Najít na Mapy.cz</a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer mt-5 pt-4 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <p class="h5 text-white display-font mb-2">Na hřebenech</p>
+          <p class="mb-0">Osobní deník túr po českých horách. Semestrální projekt do předmětu KIP/7REWB.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2>Odkazy</h2>
+          <ul class="list-unstyled mb-0">
+            <li><a href="denik.html">Deník túr</a></li>
+            <li><a href="akce.html#prihlaska">Přihláška na akci</a></li>
+            <li><a href="wireframe/wireframe.html">Wireframe webu</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h2>Dobré vědět</h2>
+          <p class="mb-1">Horská služba: <a href="tel:1210">1210</a></p>
+          <p class="mb-0">Fotografie jsou z Wikimedia Commons, autoři jsou uvedeni v <a href="galerie.html#zdroje">galerii</a>.</p>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4 mb-3">
+      <p class="small mb-0">© 2026 Na hřebenech</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
